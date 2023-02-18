@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form method="get" id="form">
+            <fieldset id="fieldset">
+               <legend id="legend">Faça seu login</legend>
+
+               <div class="input">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="email" class="inputStyle" required>   
+               </div>
+
+                <div class="input">
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="senha" class="inputStyle" required>        
+                </div>
+
+                <div class="input">
+                    <label for="priNome">Primeiro nome</label>
+                    <br>
+                    <input type="text" name="priNome" id="priNome" placeholder="primeiro nome" class="inputStyle" required>
+                </div>
+                
+                <div class="input">
+                    <label for="segNome">Segundo nome</label>
+                    <br>
+                    <input type="text" name="segNome" id="segNome" placeholder="segundo nome" class="inputStyle" required>          
+                </div>
+
+                <div class="input">
+                    <label for="receberNot">receber notificações</label>
+                    <input type="radio" name="receberNot" id="receberNot">
+                </div>
+
+
+                <div class="input">
+                    <label for="receberNot">não receber notificações</label>
+                    <input type="radio" name="receberNot" id="receberNot">
+                </div>
+
+                <div class="input">
+                    <label for="text">Porque você escolheu nossa plataforma?</label>
+                    <textarea name="text" id="text" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="input">
+                    <label for="terms" style="font-size: 15px;">Li e concordo com todos os <a href="#">termos</a></label>
+                    <input type="checkbox" name="terms" id="terms">
+                </div>
+
+                <div id="button">
+                    <input type="submit" value="concluir" class="button" onclick="enviar()">
+                    <input type="reset" value="cancelar" class="button">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="img">
+        <img src="img/fundo.png" alt="" id="img1">
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
